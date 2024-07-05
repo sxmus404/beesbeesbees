@@ -38,3 +38,9 @@ Facebook
 TikTok  
 <img src="./icons/tiktok.svg" alt="tiktok-svg" style="height: 50px;">
 
+
+# Resources
+
+Animations On Scroll | [1 (Library)](https://michalsnik.github.io/aos/) | [2 (Pure CSS)](https://css-tricks.com/books/greatest-css-tricks/scroll-animation/)  
+
+Misc. | [1](https://dev.to/devsyedmohsin/22-useful-css-tips-and-tricks-every-developer-should-know-13c6)
