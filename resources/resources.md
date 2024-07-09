@@ -43,4 +43,6 @@ TikTok
 
 Animations On Scroll | [1 (Library)](https://michalsnik.github.io/aos/) | [2 (Pure CSS)](https://css-tricks.com/books/greatest-css-tricks/scroll-animation/)  
 
-Misc. | [1](https://dev.to/devsyedmohsin/22-useful-css-tips-and-tricks-every-developer-should-know-13c6)
+Hexagons | [1](https://jtauber.github.io/articles/css-hexagon.html) | [2](https://blog.sandbay.it/news/styles/making-hexagons/)
+
+Misc. | [1](https://dev.to/devsyedmohsin/22-useful-css-tips-and-tricks-every-developer-should-know-13c6) 
