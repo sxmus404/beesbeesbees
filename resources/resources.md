@@ -22,6 +22,8 @@ Email
 Map  
 <img src="./icons/map.svg" alt="map-svg" style="height: 50px;">
 
+Location Pin  
+<img src="./icons/location-pin.svg" alt="location-pin-svg" style="height: 50px">
 
 Shopify  
 <img src="./icons/shopify.svg" alt="shopify-svg" style="height: 50px;">
