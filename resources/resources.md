@@ -22,6 +22,12 @@ Email
 Map  
 <img src="./icons/map.svg" alt="map-svg" style="height: 50px;">
 
+Location Pin  
+<img src="./icons/location-pin.svg" alt="location-pin-svg" style="height: 50px">
+
+UK Map  
+<img src="./icons/united-kingdom.svg" alt="united-kingdom-svg" style="height: 100px">  
+(NOTE: Many areas of the map will be uneeded and need to be removed, only norfolk and the adjacent counties are required.)  
 
 Shopify  
 <img src="./icons/shopify.svg" alt="shopify-svg" style="height: 50px;">
@@ -43,4 +49,6 @@ TikTok
 
 Animations On Scroll | [1 (Library)](https://michalsnik.github.io/aos/) | [2 (Pure CSS)](https://css-tricks.com/books/greatest-css-tricks/scroll-animation/)  
 
-Misc. | [1](https://dev.to/devsyedmohsin/22-useful-css-tips-and-tricks-every-developer-should-know-13c6)
+Hexagons | [1](https://jtauber.github.io/articles/css-hexagon.html) | [2](https://blog.sandbay.it/news/styles/making-hexagons/)
+
+Misc. | [1](https://dev.to/devsyedmohsin/22-useful-css-tips-and-tricks-every-developer-should-know-13c6) 

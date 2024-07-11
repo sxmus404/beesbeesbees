@@ -1,0 +1,116 @@
+/* Common CSS With Other Pages Goes Here */
+
+:root {
+    /* Colours Here */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+
+    svg {
+        height: 20vh;
+        width: 22vh;
+
+        fill: gray;
+        stroke-width: 0.5vh;
+        stroke: black;
+
+        path { 
+            height: auto;
+            width: auto;
+        }
+    }
+
+}
+
+#hex-1 {
+    fill: pink;
+
+}
+
+#hex-2 {
+    fill: aqua;
+    /* transform: translate(-7vw, 9vh); */
+}
+
+#hex-3 {
+    fill: limegreen;
+
+}
+
+.hex-single {
+    margin: 0;
+    padding: 0;
+    width: 20vw;
+    height: 20vw;
+    max-width: 20vw;
+    max-height: 20vw;
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    font-size: 10vw;
+    float: left;
+    background: black;
+    overflow: hidden;
+    text-align: center;
+    line-height: 20vw;
+}
+
+.hex-cluster {
+    margin: 0;
+    padding: 0;
+    height: 44vw;
+    width: auto;
+}
+
+.hex-icon {
+    margin: auto;
+    width: 19vw;
+    height: 19vw;
+    max-width: 19vw;
+    max-height: 19vw;
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    background: gray;
+}
+
+/* .container {
+    display: grid;
+    margin: 150px;
+    width: 150px;
+    aspect-ratio: 1.15;
+}
+
+.block {
+    grid-area:1/1;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%,75% 100%,25% 100%,0 50%);
+    background-color: #fff2aa;
+    box-shadow: inset 0 0 50px 25px #ff9a0073;
+}
+
+.container > :nth-child(1) {
+    transform: translateY(100%);
+}
+.container > :nth-child(2) {
+    transform: translateY(-100%);
+}
+.container > :nth-child(3) {
+    transform: translate(-75%,-50%)
+}
+.container > :nth-child(4) {
+    transform: translate(75%,-50%)
+}
+.container > :nth-child(5) {
+    transform: translate(75%,50%)
+}
+.container > :nth-child(6) {
+    transform: translate(-75%,50%)
+} */
+
+/* Page Specific HTML here */
