@@ -23,6 +23,8 @@ body {
     background-color: var(--tbk-light);
 }
 
+/* SOCIAL CLUSTER */
+
 .body-container { 
     margin: 5vh 5vw;
     width: auto;
@@ -83,4 +85,61 @@ body {
         margin: auto;
         height: 40%;
     }
+}
+
+
+/* FOOTER */
+
+.footer-container {
+    background-color: var(--tbk-grey);
+    height: 40vh;
+}
+
+.footer-top {
+    display: flex;
+    padding-left: 5vw;
+
+    height: 5vh;
+    background-color: var(--tbk-gold);
+}
+
+.footer-top-social {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+
+    img { 
+        height: 4vh;
+        margin: auto 0;
+    }
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3vh 5vw;
+    color: #958a42; /* TEMP COLOUR - NEED RECOMMENDATIONS FOR CHANGE */
+
+    * {
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+        line-height: 5vh;
+    }
+}
+
+.footer-info, .footer-contact {
+    text-align: center;
+}
+
+.footer-address {
+    text-align: right;
+}
+
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
 }
