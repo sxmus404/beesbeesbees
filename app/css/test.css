@@ -8,7 +8,7 @@
     /* OTHER: #fffff2 */
 
 
-    --cls-dim: 30vw;
+    --hex-cluster-dim: 30vw;
 }
 
 * {
@@ -28,17 +28,17 @@ body {
     width: auto;
 }
 
-.cluster {
+.hex-cluster {
     margin: 0;
     padding: 0;
 
     display: flex;
     flex-direction: row;
-    width: var(--cls-dim);
-    height: var(--cls-dim);
+    width: var(--hex-cluster-dim);
+    height: var(--hex-cluster-dim);
 }
 
-.sub {
+.hex-cluster-sub {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -55,15 +55,15 @@ body {
     background: var(--tbk-grey);
 }
 
-.hex-top {
+.hex-cluster-top {
     transform: translateY(3%);
 }
 
-.hex-bottom {
+.hex-cluster-bottom {
     transform: translateY(-3%);
 }
 
-.hex-right {
+.hex-cluster-right {
     transform: translateX(-21%);
 }
 
@@ -81,43 +81,6 @@ body {
 
     img {
         margin: auto;
-        
         height: 40%;
     }
 }
-
-/* 
-.hex-single {
-    margin: 0;
-    padding: 0;
-    width: 20vw;
-    height: 20vw;
-    max-width: 20vw;
-    max-height: 20vw;
-    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-    font-size: 10vw;
-    float: left;
-    background: black;
-    overflow: hidden;
-    text-align: center;
-    line-height: 20vw;
-}
-
-.hex-cluster {
-    margin: 0;
-    padding: 0;
-    height: 44vw;
-    width: auto;
-}
-
-.hex-icon {
-    margin: auto;
-    width: 19vw;
-    height: 19vw;
-    max-width: 19vw;
-    max-height: 19vw;
-    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-    background: gray;
-} */
