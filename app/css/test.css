@@ -2,6 +2,13 @@
 
 :root {
     /* Colours Here */
+    --tbk-grey: #363636;
+    --tbk-gold: #e2ce51;
+    --tbk-light: #f9f9f9; 
+    /* OTHER: #fffff2 */
+
+
+    --hex-cluster-dim: 50vh;
 }
 
 * {
@@ -13,104 +20,166 @@
 body { 
     margin: 0;
     padding: 0;
+    background-color: var(--tbk-light);
+}
 
-    svg {
-        height: 20vh;
-        width: 22vh;
+/* SOCIAL */
 
-        fill: gray;
-        stroke-width: 0.5vh;
-        stroke: black;
+.body-container { 
+    width: 100%;
+}
 
-        path { 
-            height: auto;
-            width: auto;
-        }
-    }
+.social-container {
+    margin: 5vh 5vw;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    color: var(--tbk-grey);
+}
+
+.social-content {
+    /* margin: 0 5vw; */
+    max-width: calc(100vw - (var(--hex-cluster-dim) + 20vw));
+}
+
+.social-title {
+    font-size: 10vh;
+    font-weight: bolder;
+}
+
+.social-info {
+    display: flex;
+    flex-direction: column;
+
+    margin: 5vh 0;
+    font-size: 4vh;
+    max-height: 50vh;
+    overflow: scroll;
+}
+
+.redirect-arrow {
+    margin: 3vh 0;
+    font-size: 3vh;
+    color: gray;
+
 
 }
 
-#hex-1 {
-    fill: pink;
-
-}
-
-#hex-2 {
-    fill: aqua;
-    /* transform: translate(-7vw, 9vh); */
-}
-
-#hex-3 {
-    fill: limegreen;
-
-}
-
-.hex-single {
-    margin: 0;
-    padding: 0;
-    width: 20vw;
-    height: 20vw;
-    max-width: 20vw;
-    max-height: 20vw;
-    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-    font-size: 10vw;
-    float: left;
-    background: black;
-    overflow: hidden;
-    text-align: center;
-    line-height: 20vw;
+.redirect-arrow:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .hex-cluster {
     margin: 0;
     padding: 0;
-    height: 44vw;
-    width: auto;
+
+    display: flex;
+    flex-direction: row;
+    width: var(--hex-cluster-dim);
+    height: var(--hex-cluster-dim);
 }
 
-.hex-icon {
-    margin: auto;
-    width: 19vw;
-    height: 19vw;
-    max-width: 19vw;
-    max-height: 19vw;
-    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+.hex-cluster-sub {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.hex-outer {
+    margin-top: auto;
+    margin-bottom: auto;
+
+    width: 100%;
+    height: 50%;
     clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-    background: gray;
+    background: var(--tbk-grey);
 }
 
-/* .container {
-    display: grid;
-    margin: 150px;
-    width: 150px;
-    aspect-ratio: 1.15;
+.hex-cluster-top {
+    transform: translateY(3%);
 }
 
-.block {
-    grid-area:1/1;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%,75% 100%,25% 100%,0 50%);
-    background-color: #fff2aa;
-    box-shadow: inset 0 0 50px 25px #ff9a0073;
+.hex-cluster-bottom {
+    transform: translateY(-3%);
 }
 
-.container > :nth-child(1) {
-    transform: translateY(100%);
+.hex-cluster-right {
+    transform: translateX(-21%);
 }
-.container > :nth-child(2) {
-    transform: translateY(-100%);
-}
-.container > :nth-child(3) {
-    transform: translate(-75%,-50%)
-}
-.container > :nth-child(4) {
-    transform: translate(75%,-50%)
-}
-.container > :nth-child(5) {
-    transform: translate(75%,50%)
-}
-.container > :nth-child(6) {
-    transform: translate(-75%,50%)
-} */
 
-/* Page Specific HTML here */
+.hex-inner {
+    margin-top: 3%;
+    margin-left: 3%;
+
+    height: 94%;
+    width: 94%;
+
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    background-image: linear-gradient(to bottom right, var(--tbk-gold),  var(--tbk-gold), #958a42);
+
+    display: flex;
+
+    img {
+        margin: auto;
+        height: 40%;
+    }
+}
+
+
+/* FOOTER */
+
+.footer-container {
+    background-color: var(--tbk-grey);
+    height: 40vh;
+}
+
+.footer-top {
+    display: flex;
+    padding-left: 5vw;
+
+    height: 5vh;
+    background-color: var(--tbk-gold);
+}
+
+.footer-top-social {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+
+    img { 
+        height: 4vh;
+        margin: auto 0;
+    }
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3vh 5vw;
+    color: #958a42; /* TEMP COLOUR - NEED RECOMMENDATIONS FOR CHANGE */
+
+    * {
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+        line-height: 5vh;
+    }
+}
+
+.footer-info, .footer-contact {
+    text-align: center;
+}
+
+.footer-address {
+    text-align: right;
+}
+
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+}

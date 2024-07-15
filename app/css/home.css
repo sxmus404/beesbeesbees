@@ -2,6 +2,9 @@
 
 :root {
     /* Colours Here */
+
+    --tbk-grey: #363636;
+    --tbk-gold: #a7a453;
 }
 
 * {
@@ -64,7 +67,7 @@ body {
 }
 
 
-
+x
 /* POSSIBLY TEMP STYLING */
 
 .icon-back {

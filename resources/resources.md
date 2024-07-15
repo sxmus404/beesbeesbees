@@ -51,4 +51,4 @@ Animations On Scroll | [1 (Library)](https://michalsnik.github.io/aos/) | [2 (Pu
 
 Hexagons | [1](https://jtauber.github.io/articles/css-hexagon.html) | [2](https://blog.sandbay.it/news/styles/making-hexagons/)
 
-Misc. | [1](https://dev.to/devsyedmohsin/22-useful-css-tips-and-tricks-every-developer-should-know-13c6) 
+Misc. | [1 (Misc. Tips)](https://dev.to/devsyedmohsin/22-useful-css-tips-and-tricks-every-developer-should-know-13c6) | [2 (Polaroid Images)](https://codepen.io/Wandersonsc/pen/RMerRy)
