@@ -8,7 +8,7 @@
     /* OTHER: #fffff2 */
 
 
-    --hex-cluster-dim: 30vw;
+    --hex-cluster-dim: 50vh;
 }
 
 * {
@@ -23,11 +23,51 @@ body {
     background-color: var(--tbk-light);
 }
 
-/* SOCIAL CLUSTER */
+/* SOCIAL */
 
 .body-container { 
+    width: 100%;
+}
+
+.social-container {
     margin: 5vh 5vw;
     width: auto;
+    display: flex;
+    flex-direction: row;
+    color: var(--tbk-grey);
+}
+
+.social-content {
+    /* margin: 0 5vw; */
+    max-width: calc(100vw - (var(--hex-cluster-dim) + 20vw));
+}
+
+.social-title {
+    font-size: 10vh;
+    font-weight: bolder;
+}
+
+.social-info {
+    display: flex;
+    flex-direction: column;
+
+    margin: 5vh 0;
+    font-size: 4vh;
+    max-height: 50vh;
+    overflow: scroll;
+}
+
+.redirect-arrow {
+    margin: 3vh 0;
+    font-size: 3vh;
+    color: gray;
+
+
+}
+
+.redirect-arrow:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .hex-cluster {
