@@ -2,9 +2,6 @@
 
 :root {
     /* Colours Here */
-
-    --tbk-grey: #363636;
-    --tbk-gold: #a7a453;
 }
 
 * {
@@ -67,7 +64,6 @@ body {
 }
 
 
-x
 /* POSSIBLY TEMP STYLING */
 
 .icon-back {
@@ -76,4 +72,25 @@ x
 
 .icon-front {
     height: 20vh;
+}
+
+.pin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    img {
+        height: 5vh;
+    }
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 25vw;
+
+    div > img {
+        height: 10vh;
+    }
+
 }
