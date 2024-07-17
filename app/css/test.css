@@ -305,3 +305,13 @@ body {
     60% { transform: rotate(10deg); }
     80% { transform: rotate(-10deg); }
 }
+
+
+a {
+    text-decoration: none;
+    color: var(--tbk-grey);
+}
+
+a:visited {
+    color: var(--tbk-grey);
+}
