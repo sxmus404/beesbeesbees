@@ -131,8 +131,9 @@ body {
 /* FOOTER */
 
 .footer-container {
-    background-color: var(--tbk-gold);
+    background-color: var(--tbk-grey);
     height: 40vh;
+    color: var(--tbk-gold);
 }
 
 .footer-top {
@@ -140,7 +141,7 @@ body {
     padding-left: 5vw;
 
     height: 5vh;
-    background-color: var(--tbk-grey);
+    background-color: var(--tbk-gold);
 }
 
 .footer-social {
@@ -161,7 +162,6 @@ body {
     display: flex;
     flex-direction: row;
     margin: 3vh 5vw;
-    color: var(--tbk-grey); /* TEMP COLOUR - NEED RECOMMENDATIONS FOR CHANGE */
 }
 
 .footer-info {
