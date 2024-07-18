@@ -133,6 +133,7 @@ body {
 .footer-container {
     background-color: var(--tbk-grey);
     height: 40vh;
+    color: var(--tbk-gold);
 }
 
 .footer-top {
@@ -143,42 +144,56 @@ body {
     background-color: var(--tbk-gold);
 }
 
-.footer-top-social {
+.footer-social {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    width: 10%;
+    max-height: 5vh;
+    max-width: 14vw;
+    margin-top: 1vh;
 
-    img { 
+    img {
         height: 4vh;
-        margin: auto 0;
+        width: 4vh;
     }
 }
 
 .footer-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin: 3vh 5vw;
-    color: var(--tbk-gold); /* TEMP COLOUR - NEED RECOMMENDATIONS FOR CHANGE */
-
-    * {
-        display: flex;
-        flex-direction: column;
-        height: 20vh;
-        line-height: 5vh;
-    }
 }
 
-.footer-info, .footer-contact {
-    text-align: center;
-
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50vw;
+    height: 20vh;
+    line-height: 5vh;
+    
     span {
         height: auto;
     }
 }
 
 .footer-address {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    line-height: 5vh;
+    
+    margin-left: auto;
     text-align: right;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: row;
+
+    * {
+        margin: auto 0;
+    }
 }
 
 
@@ -188,6 +203,56 @@ body {
     cursor: pointer;
 }
 
+.icon-contact {
+    height: 2.5vh;
+    margin-right: 1vw;
+}
+
+.icon-pin {
+    height: 6vh;
+}
+
+/* LOCATIONS */
+
+.locations-container {
+    padding-top: 5vh;
+    margin: 10vh 5vw;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    color: var(--tbk-grey);
+}
+
+
+/* ABOUT */
+
+.about-container {
+    padding-top: 5vh;
+    margin: 10vh 5vw;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    color: var(--tbk-grey);
+}
+
+.about-content {
+    max-width: 100%;
+}
+
+.about-title {
+    font-size: 8vh;
+    font-weight: bolder;
+    letter-spacing: 0.1vw;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+
+    margin: 5vh 0;
+    font-size: 3vh;
+    max-height: 50vh;
+}
 
 
 /* TEMP */
@@ -305,3 +370,14 @@ body {
     60% { transform: rotate(10deg); }
     80% { transform: rotate(-10deg); }
 }
+
+
+a {
+    text-decoration: none;
+    color: var(--tbk-grey);
+}
+
+a:visited {
+    color: var(--tbk-grey);
+}
+
