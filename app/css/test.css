@@ -162,10 +162,6 @@ body {
     flex-direction: row;
     margin: 3vh 5vw;
     color: var(--tbk-grey); /* TEMP COLOUR - NEED RECOMMENDATIONS FOR CHANGE */
-
-    * {
-        
-    }
 }
 
 .footer-info {
@@ -191,6 +187,15 @@ body {
     text-align: right;
 }
 
+.footer-contact {
+    display: flex;
+    flex-direction: row;
+
+    * {
+        margin: auto 0;
+    }
+}
+
 
 /* ICONS */
 
@@ -198,6 +203,10 @@ body {
     cursor: pointer;
 }
 
+.icon-contact {
+    height: 2.5vh;
+    margin-right: 1vw;
+}
 
 /* LOCATIONS */
 
