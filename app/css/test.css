@@ -208,6 +208,10 @@ body {
     margin-right: 1vw;
 }
 
+.icon-pin {
+    height: 6vh;
+}
+
 /* LOCATIONS */
 
 .locations-container {
