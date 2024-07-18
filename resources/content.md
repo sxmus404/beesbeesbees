@@ -15,7 +15,9 @@ Silvertree Botanic - https://maps.app.goo.gl/Vy5HWGfJhdmTLS179
 Ludham Bridge - https://maps.app.goo.gl/9b7rXe8FmvyeyNhYA  
 
 # Social
-Keep up to date with the ...
+Follow us on social media to get the latest news and stay up to date with the bees and the beekeeper!
+
+Use the links above or search for 'The Tipsy Beekeeper' on your favourite platform.  
 
 # About
 
