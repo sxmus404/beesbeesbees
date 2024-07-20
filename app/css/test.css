@@ -381,3 +381,30 @@ a:visited {
     color: var(--tbk-grey);
 }
 
+
+/* POLAROID */
+
+.polaroid {
+    width: 20vw;
+    height: auto;
+    display: inline-block;
+    margin-top: 2rem;
+    filter: grayscale(20%);
+    transform: rotate(-15deg);
+}
+
+.polaroid-background {
+    background: #f9f9f9;
+    padding: 1vw;
+    box-shadow: 0 2vh 2vw rgba(0,0,0,0.25);
+}
+
+.polaroid-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.polaroid-caption {
+    text-align: center;
+    padding-top: 1vh;
+}
