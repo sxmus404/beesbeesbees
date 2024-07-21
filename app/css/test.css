@@ -127,6 +127,23 @@ body {
     }
 }
 
+.social-link{
+    margin-top: 3%;
+    margin-left: 3%;
+
+    height: 94%;
+    width: 94%;
+
+    display: flex;
+
+}
+
+.social-link:hover {
+
+    animation: grow 1.5s infinite;
+
+}
+
 
 /* FOOTER */
 
@@ -203,6 +220,10 @@ body {
     cursor: pointer;
 }
 
+.icon:hover {
+    animation: grow 1.5s infinite;
+}
+
 .icon-contact {
     height: 2.5vh;
     margin-right: 1vw;
@@ -210,6 +231,13 @@ body {
 
 .icon-pin {
     height: 6vh;
+}
+
+@keyframes grow {
+
+    50% {transform: scale(110%)};
+    100% {transform: scale(90%)};
+
 }
 
 /* LOCATIONS */
@@ -221,6 +249,16 @@ body {
     display: flex;
     flex-direction: row;
     color: var(--tbk-grey);
+}
+
+.honeyimg{
+    display: flex;
+    max-width: 100%;
+    max-height: 800px;
+    height: auto;
+    margin-top: 2vh;
+    align-self: center;
+    border: 3px solid var(--tbk-grey);
 }
 
 
