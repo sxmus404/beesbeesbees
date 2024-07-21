@@ -363,6 +363,10 @@ body {
     overflow: wrap;
 }
 
+.location-content > .polaroid {
+    margin-left: 5vw;
+}
+
 .address {
     display: flex;
     flex-direction: row;
@@ -419,3 +423,66 @@ a:visited {
     color: var(--tbk-grey);
 }
 
+
+/* POLAROID */
+
+.polaroid {
+    width: 20vw;
+    height: auto;
+    display: inline-block;
+    margin-top: 2rem;
+    filter: grayscale(20%);
+}
+
+.polaroid-background {
+    background: #f9f9f9;
+    padding: 1vw;
+    box-shadow: 0 2vh 2vw rgba(0,0,0,0.25);
+}
+
+.polaroid-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.polaroid-caption {
+    text-align: center;
+    padding-top: 1vh;
+}
+
+.polaroid-container {
+    margin: 10vh 5vw;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+/* ROTATIONS */
+
+.rot-5 {
+    transform: rotate(5deg);
+}
+
+.rot-10 {
+    transform: rotate(10deg);
+}
+
+.rot-m10 {
+    transform: rotate(350deg);
+}
+
+.rot-20 {
+    transform: rotate(20deg);
+}
+
+.rot-m20 {
+    transform: rotate(340deg);
+}
+
+.rot-30 {
+    transform: rotate(30deg);
+}
+
+.rot-m30 {
+    transform: rotate(330deg);
+}
