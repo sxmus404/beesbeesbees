@@ -1,12 +1,10 @@
-/* Common CSS With Other Pages Goes Here */
+/* MAIN */
 
 :root {
-    /* Colours Here */
+    /* COLOURS  */
     --tbk-grey: #363636;
     --tbk-gold: #ebcc73;
     --tbk-light: #f9f9f9; 
-    /* OTHER: #fffff2 */
-
 
     --hex-cluster-dim: 30vw;
 }
@@ -24,15 +22,16 @@ body {
     font-family: sans-serif;
 }
 
-/* SOCIAL */
-
 .body-container { 
     width: 100%;
 }
 
+
+/* SOCIAL */
+
 .social-container {
     padding-top: 5vh;
-    margin: 10vh 5vw;
+    margin: 20vh 5vw;
     width: 90vw;
     display: flex;
     flex-direction: row;
@@ -40,7 +39,7 @@ body {
 }
 
 .social-content {
-    /* margin: 0 5vw; */
+    margin: 0 5vw;
     max-width: calc(100vw - (var(--hex-cluster-dim) + 20vw));
 }
 
@@ -55,7 +54,7 @@ body {
     flex-direction: column;
 
     margin: 5vh 0;
-    font-size: 3vh;
+    font-size: 4vh;
     max-height: 50vh;
 }
 
@@ -210,7 +209,7 @@ body {
 }
 
 .icon:hover {
-    animation: grow 1.5s infinite;
+    animation: grow 2s infinite;
 }
 
 .icon-contact {
@@ -223,11 +222,9 @@ body {
 }
 
 @keyframes grow {
-
-    50% {transform: scale(110%)};
-    100% {transform: scale(90%)};
-
+    50% {transform: scale(110%);}
 }
+
 
 /* LOCATIONS */
 
@@ -255,7 +252,7 @@ body {
 
 .about-container {
     padding-top: 5vh;
-    margin: 10vh 5vw;
+    margin: 20vh 5vw;
     width: 90vw;
     display: flex;
     flex-direction: row;
@@ -392,7 +389,7 @@ body {
 
 .address-container {
     width: 30vw;
-    margin: 10vh auto; 
+    margin: 10vh 0vw 10vh 20vw; 
 }
 
 .address:hover {
@@ -428,7 +425,6 @@ a:visited {
     width: 20vw;
     height: auto;
     display: inline-block;
-    margin-top: 2rem;
     filter: grayscale(20%);
 }
 
