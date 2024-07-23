@@ -54,7 +54,7 @@ body {
     flex-direction: column;
 
     margin: 5vh 0;
-    font-size: 4vh;
+    font-size: 3vh;
     max-height: 50vh;
 }
 
@@ -277,7 +277,7 @@ body {
     font-size: 3vh;
     /* max-height: 50vh; */
 
-    span {
+    div {
         max-width: 60vw;
     }
 
@@ -388,8 +388,8 @@ body {
 }
 
 .address-container {
-    width: 30vw;
-    margin: 10vh 0vw 10vh 20vw; 
+    width: auto;
+    margin: 10vh auto;
 }
 
 .address:hover {
@@ -483,7 +483,7 @@ a:visited {
 
 .location-content-mobile {
     visibility: hidden;
-    height: 0vh;
+    display: none;
 }
 
 
@@ -491,6 +491,9 @@ a:visited {
 
     :root {
         --hex-cluster-dim: 80vw;
+        --font-size-title: 14vw;
+        --font-size-minor: 6vw;
+        --font-size-text: 5vw;
     }
 
     .top-content {
@@ -499,22 +502,24 @@ a:visited {
 
         text-align: center;
 
-
         * { 
-            margin: 0 auto;
+            margin: 0 0;
         }
     }
 
     .locations-container {
         flex-direction: column;
         width: 90vw;
-
     }
 
     .location-content {
 
         height: 15vh;
         width: inherit;
+
+        .social-title {
+            font-size: var(--font-size-title);
+        }
 
         .social-info {
             visibility: hidden;
@@ -529,24 +534,39 @@ a:visited {
     }
 
     .address-container {
-        width: inherit;
+        width: 90vw;
         margin: 0 auto;
+
+        :first-child {
+            img {
+                transform-origin: bottom;
+                animation: shake 1s infinite;
+            }
+        }
     }
 
     .address {
         width: inherit;
         margin: 2.5vh 0;
 
+        .address-info {
+            font-size: var(--font-size-text);
+        }
     }
 
     .address-name {
-        font-size: 3vh;
+        font-size: var(--font-size-minor);
     }
 
     .location-content-mobile {
+        display: block;
         visibility: visible;
         height: auto;
-        font-size: 2vh;
+        width: 90vw;
+
+        * {
+            font-size: var(--font-size-text);
+        }
 
         .polaroid {
             margin: 0 20vw;
@@ -570,6 +590,7 @@ a:visited {
 
     .social-container {
         flex-direction: column-reverse;
+        margin: 5vh 5vw;
     }
 
     .hex-cluster {
@@ -578,19 +599,23 @@ a:visited {
 
     .social-content {
         width: 90vw;
+        margin: 0;
     }
 
     .social-title {
         margin: 5vh 0;
+        font-size: var(--font-size-title);
     }
 
     .social-info {
         width: inherit;
         margin: 0;
+        font-size: var(--font-size-text);
     }
 
     .polaroid-container {
         flex-direction: column;
+        margin: 5vh 5vw;
 
         .polaroid {
             width: 60vw;
@@ -600,24 +625,61 @@ a:visited {
 
     .about-container {
         width: 90vw;
+        margin: 5vh 5vw;
     }
 
     .about-content {
         width: 90vw;
     }
 
+    .about-title {
+        font-size: var(--font-size-title);
+        margin: 5vh 0;
+    }
+
     .about-info {
         flex-direction: column;
         width: inherit;
+        font-size: var(--font-size-text);
+        margin: 0;
 
-        span {
-            width: 90vw;
+        div {
+            max-width: none;
         }
 
         .polaroid {
             width: 60vw;
-            margin: 5vh 10vw;
+            margin: 5vh auto;
         }
+    }
+
+    .footer-container {
+        height: auto;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        width: 90vw;
+        gap: 5vh;
+        margin: 0 5vw;
+        padding: 5vh 0;
+
+        * {
+            width: 90vw;
+            text-align: left;
+        }
+    }
+
+    .icon-contact {
+        width: auto;
+    }
+
+    .footer-social {
+        gap: 3vw;
+    }
+
+    .footer-address {
+        height: auto;
     }
 }
 
