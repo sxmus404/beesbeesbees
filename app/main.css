@@ -145,6 +145,52 @@ body {
     }
 }
 
+
+/* ABOUT */
+
+.about {
+    margin: 5vh 0 10vh 0;
+    width: 100%;
+    height: auto;
+
+    overflow: wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+
+    .polaroid {
+        margin-left: auto;
+        transform: rotate(15deg);
+        min-width: 20vw;
+    }
+}
+
+
+/* LOCATIONS */
+
+.locations {
+    margin: 5vh 0 10vh 0;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.locations-address {
+    margin: 0;
+    width: 30vw;
+
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+
+    img {
+        width: 5vw;
+    }
+}
+
+
 /* POLAROID */
 
 .polaroid {
