@@ -273,7 +273,7 @@ body {
         margin: auto 0;
     }
 
-    img {
+    a > img {
         height: 2.5vh;
     }
 }
