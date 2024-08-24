@@ -14,6 +14,13 @@ body {
     font-family: sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+
+/* SECTION */
+
 .section {
     margin: 5vh 5vw;
     padding: 0;
@@ -32,9 +39,22 @@ body {
     color: var(--tbk-grey);
 }
 
+.section-subtitle {
+    font-size: 2.5vw;
+    letter-spacing: 0.1vw;
+    font-weight: bold;
+    color: var(--tbk-grey);
+}
+
 .section-text {
     font-size: 1.5vw;
     letter-spacing: 0.05vw;
+    color: var(--tbk-grey);
+}
+
+.section-subtext {
+    font-size: 1vw;
+    letter-spacing: 0.05;
     color: var(--tbk-grey);
 }
 
@@ -46,7 +66,7 @@ body {
 
 .section-link:hover {
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: underline dashed;
 }
 
 .section-break {
@@ -174,12 +194,37 @@ body {
     height: auto;
 
     display: flex;
+    flex-direction: column;
+    gap: 10vh;
+
+    * {
+        width: 100%;
+    }
+}
+
+.locations-info {
+    width: 100%;
+    display: flex;
     flex-direction: row;
+    gap: 5vw;
+
+    .polaroid {
+        padding-right: auto;
+        transform: rotate(-15deg);
+    }
+}
+
+.locations-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5vh;
 }
 
 .locations-address {
     margin: 0;
-    width: 30vw;
+    width: 40vw;
 
     display: flex;
     flex-direction: row;
@@ -187,7 +232,37 @@ body {
 
     img {
         width: 5vw;
+        height: 5vw;
     }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        max-height: 5vw;
+        line-height: 250%;
+
+        * {
+            margin: auto;
+            padding: 0;
+        }
+    }
+}
+
+.locations-address:hover {
+    cursor: pointer;
+
+    img {
+        transform-origin: bottom;
+        animation: icon-shake 1s infinite;
+    }
+}
+
+.locations-address:visited {
+    text-decoration: none;
+    color: var(--tbk-grey);
 }
 
 
@@ -212,6 +287,7 @@ body {
     text-align: center;
     padding-top: 1vh;
 }
+
 
 /* FOOT */
 
@@ -280,4 +356,13 @@ body {
 
 .foot-address {
     text-align: right;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes icon-shake {
+    20% { transform: rotate(-10deg); }
+    60% { transform: rotate(10deg); }
+    80% { transform: rotate(-10deg); }
 }
