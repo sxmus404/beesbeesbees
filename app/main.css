@@ -266,26 +266,78 @@ a {
 }
 
 
-/* POLAROID */
+/* SOCIAL */
 
-.polaroid {
-    width: 20vw;
-    height: auto;
-    display: inline-block;
-    filter: grayscale(20%);
-    background: var(--tbk-light);
-    padding: 1vw;
-    box-shadow: 0 0 10vh 2vh rgba(0, 0, 0, 0.25);
+.social {}
+
+.hex-cluster {
+    width: 30vw;
+    height: 30vw;
+
+    display: flex;
+    flex-direction: row;
 }
 
-.polaroid-image {
-    max-width: 100%;
-    height: auto;
+.hex-cluster-sub {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
 }
 
-.polaroid-caption {
-    text-align: center;
-    padding-top: 1vh;
+.hex-outer {
+    margin-top: auto;
+    margin-bottom: auto;
+
+    width: 100%;
+    height: 50%;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    background: var(--tbk-grey);
+}
+
+.hex-cluster-top {
+    transform: translateY(3%);
+}
+
+.hex-cluster-bottom {
+    transform: translateY(-3%);
+}
+
+.hex-cluster-right {
+    transform: translateX(-21%);
+}
+
+.hex-inner {
+    margin-top: 3%;
+    margin-left: 3%;
+
+    height: 94%;
+    width: 94%;
+
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    background: var(--tbk-gold);
+
+    display: flex;
+
+    img {
+        margin: auto;
+        height: 40%;
+    }
+}
+
+.social-link{
+    margin-top: 3%;
+    margin-left: 3%;
+
+    height: 94%;
+    width: 94%;
+
+    display: flex;
+}
+
+.social-link:hover {
+    transform-origin: center;
+    animation: icon-grow 1.5s infinite;
 }
 
 
@@ -369,10 +421,37 @@ a {
 }
 
 
+/* POLAROID */
+
+.polaroid {
+    width: 20vw;
+    height: auto;
+    display: inline-block;
+    filter: grayscale(20%);
+    background: var(--tbk-light);
+    padding: 1vw;
+    box-shadow: 0 0 10vh 2vh rgba(0, 0, 0, 0.25);
+}
+
+.polaroid-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.polaroid-caption {
+    text-align: center;
+    padding-top: 1vh;
+}
+
+
 /* ANIMATIONS */
 
 @keyframes icon-shake {
     20% { transform: rotate(-10deg); }
     60% { transform: rotate(10deg); }
     80% { transform: rotate(-10deg); }
+}
+
+@keyframes icon-grow {
+    50% {transform: scale(110%);}
 }
