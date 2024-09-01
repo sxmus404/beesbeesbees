@@ -179,8 +179,8 @@ a {
     gap: 5vw;
 
     .polaroid {
-        margin-left: auto;
-        transform: rotate(15deg);
+        margin-right: auto;
+        transform: rotate(-5deg);
         min-width: 20vw;
     }
 }
@@ -195,7 +195,6 @@ a {
 
     display: flex;
     flex-direction: column;
-    gap: 10vh;
 
     * {
         width: 100%;
@@ -210,7 +209,7 @@ a {
 
     .polaroid {
         padding-right: auto;
-        transform: rotate(-15deg);
+        transform: translateY(-10vh) rotate(15deg);
     }
 }
 
@@ -445,7 +444,7 @@ a {
 }
 
 .polaroid-image {
-    max-width: 100%;
+    max-width: 20vw;
     height: auto;
 }
 
