@@ -88,7 +88,7 @@ a {
 
     background-color: var(--tbk-gold);
 
-    img { 
+    .navigation-logo { 
         margin: auto 5vw auto 5vw;
     }
 
@@ -109,7 +109,7 @@ a {
 
 .navigation-desktop {
     visibility: visible;
-    width: auto;
+    width: 100%;
 }
 
 .navigation-mobile {
@@ -622,7 +622,7 @@ a {
 
         div {
             height: 5vh;
-            
+
             margin: 0;
             padding: 0;
 
