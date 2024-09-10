@@ -92,7 +92,7 @@ a {
         margin: auto 5vw auto 5vw;
     }
 
-    div {
+    .navigation-desktop {
         margin: auto 15vw auto auto;
         width: 100%;
 
@@ -105,6 +105,16 @@ a {
 
 .navigation-logo {
     width: 7.5vh;
+}
+
+.navigation-desktop {
+    visibility: visible;
+    width: auto;
+}
+
+.navigation-mobile {
+    visibility: hidden;
+    width: 0;
 }
 
 
@@ -464,4 +474,170 @@ a {
 
 @keyframes icon-grow {
     50% {transform: scale(110%);}
+}
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 800px) {
+
+    /* SECTION */
+
+    .section {
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+    }
+
+    .section-title {
+        font-size: 5.5vw;
+    }
+
+    .section-text {
+        font-size: 3vw;
+    }
+
+    .section-break {
+        border: 0.5vh solid var(--tbk-gold);
+    }
+
+
+    /* HEADER + NAV */
+
+    .navigation {
+        height: 7.5vh;
+    }
+
+    .navigation-logo {
+        max-height: 4.5vh;
+        width: auto;
+    }
+
+    .navigation-desktop {
+        width: 0;
+        visibility: hidden;
+
+        * { 
+            width: 0;
+        }
+    }
+
+    .navigation-mobile {
+        margin-right: 5vw;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: none;
+
+        visibility: visible;
+        height: 3.5vh;
+        width: auto;
+        float: right;
+    }
+
+
+    /* INTRO */
+
+    .intro { 
+        margin: 5vh 5vw;
+    }
+
+    .intro-fan {
+        img {
+            width: 30vw;
+        }
+
+        .polaroid:nth-child(1) {
+            transform: translate(0, -1vh) rotate(-15deg);
+        }
+
+        .polaroid:nth-child(3) {
+            transform: translate(0, -1vh) rotate(15deg);
+        }
+    }
+
+    .intro-title {
+        margin: 0 auto;
+
+        p:nth-child(1) {
+            font-size: 6.5vw;
+        }
+
+        p:nth-child(n+2) {
+            font-size: 4vw;
+        }
+    }
+
+
+    /* ABOUT */
+
+    .about {
+        flex-direction: column-reverse;
+        margin: 5vh auto;
+
+        .polaroid {
+            width: 60vw;
+            height: auto;
+            margin: auto;
+
+            .polaroid-image {
+                min-width: 100%;
+            }
+        }
+
+        .section-text {
+            margin-bottom: 2.5vh;
+        }
+    }
+
+
+    /* LOCATIONS */
+
+    .locations {
+        margin: 5vh auto;
+    }
+
+    .locations-info {
+        flex-direction: column-reverse;
+        margin: 2.5vh auto 2.5vh auto;
+        gap: 2.5vh;
+
+        .polaroid {
+            margin: auto;
+            width: 60vw;
+            transform: rotate(5deg);
+
+            .polaroid-image {
+                min-width: 100%;
+            }
+        }
+    }
+
+    .locations-address {
+        width: 100%;
+        height: 5vh;
+    
+        img {
+            width: 5vh;
+            height: 5vh;
+        }
+
+        div {
+            height: 5vh;
+            
+            margin: 0;
+            padding: 0;
+
+            * {
+                height: 2.5vh;
+            }
+        }
+    }
+
+
+    /* POLAROID */
+
+    .polaroid-caption {
+        padding: 0;
+        font-size: 0.5vh;
+    }
+
 }
