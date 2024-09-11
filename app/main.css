@@ -283,11 +283,6 @@ a {
     display: flex;
     flex-direction: row;
     gap: 5vw;
-
-    .polaroid {
-        padding-right: auto;
-        transform: rotate(-15deg);
-    }
 }
 
 .hex-cluster {
@@ -654,6 +649,49 @@ a {
                 line-height: 3.5vh;
             }
         }
+    }
+
+
+    /* SOCIAL */
+
+    .social {
+        flex-direction: column-reverse;
+        margin: 2.5vh auto;
+    }
+
+    .hex-cluster {
+        width: 100%;
+        height: 90vw;
+    }
+
+
+    /* FOOT */
+
+    .foot {
+        min-height: 50vh;
+        height: auto;
+    }
+
+    .foot-bottom {
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .foot-contact {
+        gap: 5vw;
+    }
+
+    .foot-icons {
+        justify-content: start;
+        gap: 5vw;
+    }
+
+    .foot-address {
+        text-align: left;    
+    }
+
+    .foot-centre {
+        text-align: left;
     }
 
 
