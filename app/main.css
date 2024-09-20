@@ -217,6 +217,11 @@ a {
     flex-direction: row;
     gap: 5vw;
 
+    .section-text {
+        max-width: 30vw;
+        overflow: wrap;
+    }
+
     .polaroid {
         padding-right: auto;
         transform: translateY(-10vh) rotate(15deg);
@@ -273,7 +278,6 @@ a {
     text-decoration: none;
     color: var(--tbk-grey);
 }
-
 
 /* SOCIAL */
 
@@ -593,6 +597,10 @@ a {
     .locations-info {
         flex-direction: column;
         margin: 0 auto 2.5vh auto;
+
+        .section-text {
+            max-width: 100vw;
+        }
 
         .polaroid {
             margin: 2.5vh auto;
