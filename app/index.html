@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./main.css">
 
     <script> function scrollToSection(sectionID) { document.getElementById(sectionID).scrollIntoView( {behavior: "smooth"} ); } </script>
+    <script src="nav.js" defer> </script>
 
 </head>
 
@@ -29,8 +30,15 @@
             <a class="section-link" onclick="scrollToSection('contact-scrollpoint');">CONTACT</a>
         </div>
 
-        <img class="navigation-mobile" src="./img/icons/hamburger.svg">
+        <img id="navigation-mobile" src="./img/icons/hamburger.svg">
 
+    </div>
+
+    <div id="navigation-mobile-dropdown" class="dropdown-before">
+        <a class="section-link" onclick="scrollToSection('about-scrollpoint');">ABOUT ME</a>
+        <a class="section-link" onclick="scrollToSection('locations-scrollpoint');">LOCATIONS</a>
+        <a class="section-link" onclick="scrollToSection('social-scrollpoint');">SOCIAL</a>
+        <a class="section-link" onclick="scrollToSection('contact-scrollpoint');">CONTACT</a>
     </div>
 
     <!-- INTRO -->
