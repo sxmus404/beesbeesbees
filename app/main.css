@@ -546,13 +546,18 @@ a {
     }
 
     .dropdown-before {
+        background-color: var(--tbk-light);
         height: 0;
         visibility: hidden;
+
+        * {
+            color: var(--tbk-light);
+        }
     }
 
     .dropdown-after {
         background-color: var(--tbk-dgold);
-        transition: display 3s ease;
+        transition: background-color 0.5s linear;
 
         visibility: visible;
         display: flex;
@@ -565,6 +570,8 @@ a {
         gap: 2vh;
 
         * {
+            transition: color 1.5s ease;
+
             margin: auto 5vw;
             height: 4vh;
             font-size: 4.5vw;
