@@ -1,7 +1,8 @@
 :root {
     /* COLOURS */
     --tbk-grey: #363636;
-    --tbk-gold: #ebcc73;
+    --tbk-gold: #e0c36c;
+    --tbk-dgold: #ebcd73d0;
     --tbk-light: #f9f9f9;
     --tbk-link: #808080;
 }
@@ -550,7 +551,8 @@ a {
     }
 
     .dropdown-after {
-        transition: visibility 3s ease;
+        background-color: var(--tbk-dgold);
+        transition: display 3s ease;
 
         visibility: visible;
         display: flex;
@@ -558,16 +560,24 @@ a {
 
         width: 100%;
         height: auto;
-        margin: 2vh 0;
+        padding: 2vh 0;
+        margin-bottom: 2vh;
         gap: 2vh;
 
         * {
             margin: auto 5vw;
             height: 4vh;
+            font-size: 4.5vw;
+            font-weight: 500;
+            letter-spacing: 0.25vw;
             text-align: right;
 
             color: var(--tbk-grey);
         };
+
+        .section-link:hover {
+            text-decoration: none;
+        }
     }
 
 
