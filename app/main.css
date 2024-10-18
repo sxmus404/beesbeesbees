@@ -269,7 +269,7 @@ a {
         margin-bottom: auto;
 
         max-height: 5vw;
-        line-height: 250%;
+        /* line-height: 250%; */
 
         * {
             margin: auto;
