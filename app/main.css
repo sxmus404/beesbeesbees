@@ -152,7 +152,7 @@ a {
     .polaroid:nth-child(1) {
         position: relative;
         z-index: -1;
-        transform: translate(2.5vw, 3vh) rotate(-15deg);
+        transform: translate(2.5vw, 3vh) rotate3d(0, 0, 1, -15deg);
     }
 
     .polaroid:nth-child(2) { 
@@ -164,7 +164,8 @@ a {
     .polaroid:nth-child(3) { 
         position: relative;
         z-index: -1;
-        transform: translate(-2.5vw, 3vh) rotate(15deg);
+        transform: translate(-2.5vw, 3vh) rotate3d(0, 0, 1, 15deg);
+        
     }
 }
 
@@ -203,7 +204,7 @@ a {
 
     .polaroid {
         margin-right: auto;
-        transform: rotate(-5deg);
+        transform: rotate3d(0, 0, 1, -5deg);
         min-width: 20vw;
     }
 }
@@ -237,7 +238,7 @@ a {
 
     .polaroid {
         padding-right: auto;
-        transform: translateY(-10vh) rotate(15deg);
+        transform: translateY(-10vh) rotate3d(0, 0, 1, 15deg);
     }
 }
 
@@ -600,11 +601,11 @@ a {
         }
 
         .polaroid:nth-child(1) {
-            transform: translate(0, -1vh) rotate(-15deg);
+            transform: translate(0, -1vh) rotate3d(0, 0, 1, -15deg);
         }
 
         .polaroid:nth-child(3) {
-            transform: translate(0, -1vh) rotate(15deg);
+            transform: translate(0, -1vh) rotate3d(0, 0, 1, 15deg);
         }
     }
 
@@ -660,7 +661,7 @@ a {
         .polaroid {
             margin: 2.5vh auto;
             width: 60vw;
-            transform: rotate(5deg);
+            transform: rotate3d(0, 0, 1, 5deg);
 
             .polaroid-image {
                 min-width: 100%;
