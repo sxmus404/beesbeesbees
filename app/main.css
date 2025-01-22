@@ -5,6 +5,8 @@
     --tbk-dgold: #ebcd73d0;
     --tbk-light: #f9f9f9;
     --tbk-link: #808080;
+
+    scrollbar-color: #363636 #e0c36c;
 }
 
 body {
@@ -45,6 +47,10 @@ a {
     letter-spacing: 0.1vw;
     font-weight: bold;
     color: var(--tbk-grey);
+
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: thin;
 }
 
 .section-text {
@@ -248,6 +254,11 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 5vh;
+
+    div {
+        max-width: 40vw;
+        width: auto;
+    }
 }
 
 .locations-address {
@@ -413,8 +424,11 @@ a {
     flex-direction: row;
     gap: 1vw;
 
+    text-decoration: none;
+
     * {
         margin: auto 0;
+        color: var(--tbk-gold);
     }
 
     img {
@@ -474,6 +488,35 @@ a {
 .polaroid-caption {
     text-align: center;
     padding-top: 1vh;
+}
+
+
+/* MISPLACED */
+
+.location-banner {
+    height: 1.2rem;
+    min-width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    background-color: var(--tbk-dgold);
+    border-radius: 10vh;
+    padding: 0.2vh;
+    padding-top: 0.3vh;
+    text-decoration: none;
+    gap: 1vh;
+    margin-top: 0.5vh;
+    justify-content: center;
+}
+
+.locations-break {
+    height: 0;
+    width: 0;
+    display: none;
+}
+
+.banner-icon {
+    max-height: 1rem;
+    width: auto;
 }
 
 
@@ -672,7 +715,12 @@ a {
     .locations-list {
         gap: 2.5vh;
 
-        .locations-address:nth-child(1) {
+        div {
+            max-width: 95%;
+            width: 95%;
+        }
+
+        div:nth-child(1) {
             img {
                 transform-origin: bottom;
                 animation: icon-shake 1s infinite;
@@ -681,7 +729,7 @@ a {
     }
 
     .locations-address {
-        width: 100%;
+        width: 95%;
         height: 5vh;
         gap: 5vw;
         padding: 1vw 0;
@@ -695,17 +743,24 @@ a {
             max-height: 5vh;
             margin: 0;
             padding: 0;
+            transform: translateY(1vh);
 
             * {
                 height: 2.5vh;
-                line-height: 2vh;
+                /* line-height: 2vh; */
                 transform: none;
             }
 
             .section-subtitle {
-                font-size: 5vw;
+                font-size: 4vw;
                 letter-spacing: 0.1vw;
-                line-height: 0.5vw;
+                line-height: 1;
+                height: 100%;
+                transform: translateY(-1vh);
+
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
 
             .section-subtext {
@@ -766,5 +821,30 @@ a {
         padding: 0;
         font-size: 0.5vh;
     }
+
+
+    /* MISPLACED */
+
+    .location-banner {
+        width: 90%;
+        display: inline-flex;
+        flex-direction: row;
+        background-color: var(--tbk-dgold);
+        border-radius: 10vh;
+        padding: 0.2vh;
+        padding-top: 0.3vh;
+        text-decoration: none;
+        gap: 1vh;
+    }
+
+    .banner-icon {
+        max-height: 1rem;
+        width: auto;
+        margin-left: 1vh;
+    }
+
+    .locations-break {
+        height: 0.5vh;
+    }    
 
 }
