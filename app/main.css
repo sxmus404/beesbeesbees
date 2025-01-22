@@ -423,8 +423,11 @@ a {
     flex-direction: row;
     gap: 1vw;
 
+    text-decoration: none;
+
     * {
         margin: auto 0;
+        color: var(--tbk-gold);
     }
 
     img {
