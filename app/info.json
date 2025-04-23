@@ -355,6 +355,180 @@
                 "start": "",
                 "end": ""
             }
+        },
+
+        {
+            "name": "Watsons Cafe Bacton",
+
+            "address": {
+                "line-1": "Coast Road",
+                "line-2": "Bacton",
+                "line-3": "",
+                "postcode": "NR12 0EU"
+            },
+
+            "location": {
+                "google": "https://maps.app.goo.gl/49VVuKAdrgxJmZqj6",
+                "w3w": "///lure.overheat.forest"
+            },
+
+            "contact": {
+                "website": "https://www.facebook.com/watsonsofbacton",
+                "telephone": "01692 218118",
+                "email": "watsonsbay@hotmail.com"
+            },
+
+            "description": "",
+
+            "date": {
+                "start": "",
+                "end": ""
+            }
+        },
+
+        {
+            "name": "Algys Farm Shop",
+
+            "address": {
+                "line-1": "Billingford Road",
+                "line-2": "Dereham",
+                "line-3": "",
+                "postcode": "NR20 5PW"
+            },
+
+            "location": {
+                "google": "https://maps.app.goo.gl/zUC5mGsx9aLj7eDG8",
+                "w3w": "///imprints.intro.play"
+            },
+
+            "contact": {
+                "website": "http://www.algys.co.uk/",
+                "telephone": "01362 683893",
+                "email": ""
+            },
+
+            "description": "",
+
+            "date": {
+                "start": "",
+                "end": ""
+            }
+        },
+
+        {
+            "name": "Keelers Butchers",
+
+            "address": {
+                "line-1": "155 Holt Road",
+                "line-2": "Horsford",
+                "line-3": "",
+                "postcode": "NR10 3DN"
+            },
+
+            "location": {
+                "google": "",
+                "w3w": "///defended.repeat.impaired"
+            },
+
+            "contact": {
+                "website": "http://www.keelersbutchers.co.uk/",
+                "telephone": "01603 898315",
+                "email": ""
+            },
+
+            "description": "",
+
+            "date": {
+                "start": "",
+                "end": ""
+            }
+        },
+
+        {
+            "name": "SEVENTEEN",
+
+            "address": {
+                "line-1": "17 Red Lion Street",
+                "line-2": "Aylsham",
+                "line-3": "",
+                "postcode": "NR11 6ER"
+            },
+
+            "location": {
+                "google": "https://maps.app.goo.gl/7RbDFRUwkKfnwt469",
+                "w3w": "///hopping.bath.ideals"
+            },
+
+            "contact": {
+                "website": "http://www.seventeenaylsham.co.uk/",
+                "telephone": "",
+                "email": "hello@seventeenaylsham.co.uk"
+            },
+
+            "description": "",
+
+            "date": {
+                "start": "",
+                "end": ""
+            }
+        },
+
+        {
+            "name": "Mundesley Butchers",
+
+            "address": {
+                "line-1": "2 Back Street",
+                "line-2": "Mundesley",
+                "line-3": "",
+                "postcode": "NR11 8JJ"
+            },
+
+            "location": {
+                "google": "https://maps.app.goo.gl/nSDmSjWeRJHRdkrA8",
+                "w3w": "///twinkling.opposite.civil"
+            },
+
+            "contact": {
+                "website": "",
+                "telephone": "01263 720796",
+                "email": ""
+            },
+
+            "description": "",
+
+            "date": {
+                "start": "",
+                "end": ""
+            }
+        },
+
+        {
+            "name": "Norfolk Food Hall",
+
+            "address": {
+                "line-1": "Norfolk Showground",
+                "line-2": "Dereham Road",
+                "line-3": "",
+                "postcode": "NR5 0TT"
+            },
+
+            "location": {
+                "google": "https://maps.app.goo.gl/rypvWLSpVQtpN2sx8",
+                "w3w": "///joke.trample.quits"
+            },
+
+            "contact": {
+                "website": "https://norfolkfoodhall.co.uk/",
+                "telephone": "01603 748931",
+                "email": ""
+            },
+
+            "description": "",
+
+            "date": {
+                "start": "",
+                "end": ""
+            }
         }
     ]
 
